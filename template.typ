@@ -26,13 +26,14 @@
 
 #place(left,dy:47em,dx:14%, text(font: "Source Han Serif", lang: "zh", region: "cn",[*证书摘要*], size: 14pt,fill:tsinghua_purple))
 
+// see https://github.com/typst/typst/issues/2196#issuecomment-1728135476
 #let try_to_string(content) = {
   if content.has("text") {
     content.text
   } else if content.has("children") {
     content.children.map(try_to_string).join("")
   } else if content.has("body") {
-    to-string(content.body)
+    try_to_string(content.body)
   } else if content == [ ] {
     " "
   }
