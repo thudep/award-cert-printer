@@ -1,4 +1,4 @@
-# DEPAwardCertPrinter
+# Award Certificates Printer
 
 A sh script to print certificates for some contests.
 
@@ -6,7 +6,7 @@ A sh script to print certificates for some contests.
 
 ### Install dependencies
 
-- `typst`: a LaTeX alternative, its [package name](https://repology.org/project/typst/versions) may vary on different platforms
+- `typst`: a LaTeX alternative, its [package name](https://repology.org/project/typst/versions) hardly vary on different platforms
 - Source Han Serif: font used in the template
 
 ### Provide a name list
