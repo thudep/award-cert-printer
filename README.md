@@ -14,8 +14,8 @@ A sh script to print certificates for some contests.
 The input file should follow this format just like `list.CSV`:
 
 ```text
-清小华,三等奖
-华小清,二等奖
+清小华,三等奖,2024地球中微子暑期学校
+华小清,二等奖,2024地球中微子暑期学校
 ```
 
 ### Provide a secret
@@ -24,9 +24,7 @@ The secret should be a string, and it should be stored in a file named `secret.t
 
 ### (Optional) Modify the template
 
-You may modify `contest.typ` to change the name of the contest.
-
-And you may modify `template.typ` to customize the template.
+You may modify `contest.typ` to customize the style.
 
 ### Run the script
 
