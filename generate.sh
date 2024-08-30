@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+processBar()
+{
+    local current=$1
+    local total=$2
+    local name=$3
+    local contest=$4
+    local prize=$5
+    local percentage=$((current*100/total))
+    printf "\r[INF] Processing: $name, $contest, $prize - $current/$total ($percentage%%)"
+}
+
 # Read Parameters
 while getopts ":g:s:h" opts; do
     case ${opts} in
@@ -50,6 +61,9 @@ fi
 
 mkdir -p output
 
+whole=$(wc -l < list.CSV)
+process=0
+
 while IFS=',' read -r name prize contest; do
     echo "$name" > name.typ
 
@@ -66,6 +80,9 @@ while IFS=',' read -r name prize contest; do
     fi
 
     typst compile template.typ "output/${name}.pdf"
+
+    process=$((process+1))
+    processBar $process $whole $name $contest $prize
 done < list.CSV
 
 echo "[INF] Completed"
