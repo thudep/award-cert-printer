@@ -4,6 +4,8 @@
 
 #set text(tracking: 1.5pt)
 
+#set underline(offset: 4pt)
+
 #place(center,dy:12em, text(font: "Source Han Serif", lang: "zh", region: "cn",[*获奖证书*], size: 40pt,fill:tsinghua_purple))
 
 #place(left,dy:19em,dx:14%, text(font: "Source Han Serif", lang: "zh", region: "cn",strong(underline[#include "name.typ"]), size: 28pt))
