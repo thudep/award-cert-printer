@@ -24,7 +24,7 @@ You may modify `template.typ` to customize the style.
 
 ### Run the script
 
-There are three ways to run the script. Here are some examples, and you can use `-h` to show the help message.
+There are two ways to run the script. Here are some examples, and you can use `-h` to show the help message.
 
 #### 1. Use the default secret(stored in `secret.txt`) to generate the sha1
 
@@ -38,10 +38,4 @@ Create a `secret.txt` file with the secret in it, then run:
 
 ```bash
 ./generate.sh -s <your_secret>
-```
-
-#### 3. Use a gpg key to generate the sha1
-
-```bash
-./generate.sh -g <your_gpg_key>
 ```
