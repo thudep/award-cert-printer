@@ -4,7 +4,7 @@
 
 #set text(tracking: 1.5pt)
 
-#place(center,dy:10em, text(font: "Source Han Serif", lang: "zh", region: "cn",[*获奖证书*], size: 40pt,fill:tsinghua_purple))
+#place(center,dy:12em, text(font: "Source Han Serif", lang: "zh", region: "cn",[*获奖证书*], size: 40pt,fill:tsinghua_purple))
 
 #place(left,dy:19em,dx:14%, text(font: "Source Han Serif", lang: "zh", region: "cn",strong(underline[#include "name.typ"]), size: 28pt))
 
@@ -20,7 +20,7 @@
 
 #place(left,dy:32em,dx:14%, text(font: "Source Han Serif", lang: "zh", region: "cn",[*特发此证，以资鼓励*], size: 22pt,fill:tsinghua_purple))
 
-#place(left,dy:40em,dx:66%, text(font: "Source Han Serif", lang: "zh", region: "cn",[*清华大学工程物理系*], size: 20pt,fill:tsinghua_purple))
+#place(left,dy:39em,dx:66%, text(font: "Source Han Serif", lang: "zh", region: "cn",[*清华大学工程物理系*], size: 20pt,fill:tsinghua_purple))
 
 #place(center,dy:35em,dx:-24%, image("dep.jpg",width: 9em))
 
