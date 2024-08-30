@@ -85,4 +85,5 @@ while IFS=',' read -r name prize contest; do
     processBar $process $whole $name $contest $prize
 done < list.CSV
 
+echo
 echo "[INF] Completed"
